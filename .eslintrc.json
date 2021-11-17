@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "prettier"],
   "plugins": [],
   "parserOptions": {
     "ecmaVersion": 2021,
@@ -11,8 +8,7 @@
       "jsx": true
     }
   },
-
-  "ecmaFeatures": {
+  "env": {
     "es6": true,
     "browser": true,
     "node": true

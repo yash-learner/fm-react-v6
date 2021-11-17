@@ -1,18 +1,19 @@
 //  App is a react component => basic building block in react which uses functions and classes to create reusable components
 
-const Pet = (props) => {
-  return React.createElement("div", {}, [
-    React.createElement("h2", {}, props.name),
-    React.createElement("h3", {}, props.animal),
-    React.createElement("h3", {}, props.breed),
-  ]);
-};
+import React from "react";
+import ReactDOM from "react-dom";
+import Pet from "./Pet";
+
+// "./name" => file in same directory
+// "name" => node module from npm
+// 98% percent of times it is to have a separate file for every component
+
 
 const App = () => {
   return React.createElement("div", {}, [
     React.createElement("h1", { id: "my-brand" }, "Adopt Me!"),
     React.createElement(Pet, {
-      name: "Luna",
+      name: "Lunaaa",
       animal: "Dog",
       breed: "Havanese",
     }),
