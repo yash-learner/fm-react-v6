@@ -3,6 +3,7 @@
 // import React from "react"; //Babel automatically finds
 import ReactDOM from "react-dom";
 import Pet from "./Pet";
+import SearchParams from "./SearchParams";
 
 // "./name" => file in same directory
 // "name" => node module from npm
@@ -34,7 +35,9 @@ import Pet from "./Pet";
 const App = () => {
   return (
     <div>
+
       <h1>Adopt Me!</h1>
+      <SearchParams />
       <Pet name="Luna" animal="Dog" breed="Havanese" />
       <Pet name="Pepper" animal="Bird" breed="Cockatiel" />
       <Pet name="Sudo" animal="Dog" breed="German Shepard" />
