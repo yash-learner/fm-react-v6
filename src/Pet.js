@@ -10,6 +10,7 @@
 
 //using jsx
 // the above code is what below code will get transpiled into
+
 const Pet = (props) => {
   return (
     <div>
